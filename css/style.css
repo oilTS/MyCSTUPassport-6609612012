@@ -1,131 +1,77 @@
-body {
-  margin: 0px;
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.grid {
-  border: 0px solid #c4cd95;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas: "header header header"
-                       "about  about purpose "
-                       "blank1 video video"
-                       "blank1 vdo1 vdo1";
-  grid-gap: 0px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(auto,auto);
-  column-gap: 10px;
-  row-gap: 10px;
-  background-color: bisque;
-  padding: 5px;
+nav {
+  background: #333;
 }
 
-.header {
-  grid-area: header;
-  background-color: #F1C376 ;
-  display: block ;
-  position: relative ;
-  z-index: 1 ;
-  
-    
-}
-.about {
-  grid-area: about;
-  padding-left: 10px;
-  background-color: #F1C376;
-  
-}
-.pic1 {
-  grid-area: pic1;
-  background-color: #F1C376;
-}
-.purpose {
-  grid-area: purpose;
-  background-color: #F1C376;
-}
-.blank1 {
-  grid-area: blank1;
-  
-}
-.video {
-  grid-area: video;
-  background-color: #F1C376;
-}
-.vdo1 {
-  grid-area: vdo1;
-  
-}
-.footer {
-  grid-area: footer;
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
-.img1 {
-  float: left ;
-  border-radius: 50% ;
-  margin-right: 35px ;
-  position : relative ;
-  z-index: 2 ;
+.menu {
+  display: flex;
 }
 
-.pic1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pic3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-
-.vdo1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-mark {
-  background-color: #d2dbb5 ;
-}
-
-h2 {
+.menu li {
+  list-style: none;
+  margin-left: 1rem;
   text-align: center;
-  padding-top: 10px;
-  font-family: bladley hand, cursive ;
-  font-size: 18px ;
-  color: #24481a;
+  transition: 0.5s;
 }
 
-.text1 {
-  font-family: bladley hand, cursive ;
-  font-size: 18px ;
-  color: #24481a;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.text2 {
-  padding-top: 5px;
-  font-family: bladley hand, cursive ;
-  font-size: 16px ;
-  color: #24481a;
+.logo {
+  font-size: 1.5rem;
 }
 
-.text3 {
-  font-family: bladley hand, cursive ;
-  font-size: 16px ;
-  color: #24481a;
+@media screen and (max-width:360px) {
+  .logo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .nav-con {
+    padding: 3rem 0;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu li {
+    padding: 1rem 0;
+    margin-left: 0;
+    transition: 0.5s;
+  }
+
+  .menu li:hover {
+    background: #222;
+  }
 }
 
 .span1 {
-  font-family: bladley hand, cursive ;
-  color: #24481a;
-}
-
-.span2 {
-  font-family: bladley hand, cursive ;
-  font-size: 20px;
-  color: #24481a;
+  font-family: 'Brush Script MT', cursive;
 }
