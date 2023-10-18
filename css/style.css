@@ -1,0 +1,131 @@
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+.grid {
+  border: 0px solid #c4cd95;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header"
+                       "about  about purpose "
+                       "blank1 video video"
+                       "blank1 vdo1 vdo1";
+  grid-gap: 0px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(auto,auto);
+  column-gap: 10px;
+  row-gap: 10px;
+  background-color: bisque;
+  padding: 5px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #F1C376 ;
+  display: block ;
+  position: relative ;
+  z-index: 1 ;
+  
+    
+}
+.about {
+  grid-area: about;
+  padding-left: 10px;
+  background-color: #F1C376;
+  
+}
+.pic1 {
+  grid-area: pic1;
+  background-color: #F1C376;
+}
+.purpose {
+  grid-area: purpose;
+  background-color: #F1C376;
+}
+.blank1 {
+  grid-area: blank1;
+  
+}
+.video {
+  grid-area: video;
+  background-color: #F1C376;
+}
+.vdo1 {
+  grid-area: vdo1;
+  
+}
+.footer {
+  grid-area: footer;
+}
+
+.img1 {
+  float: left ;
+  border-radius: 50% ;
+  margin-right: 35px ;
+  position : relative ;
+  z-index: 2 ;
+}
+
+.pic1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pic3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.vdo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mark {
+  background-color: #d2dbb5 ;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  font-family: bladley hand, cursive ;
+  font-size: 18px ;
+  color: #24481a;
+}
+
+.text1 {
+  font-family: bladley hand, cursive ;
+  font-size: 18px ;
+  color: #24481a;
+}
+
+.text2 {
+  padding-top: 5px;
+  font-family: bladley hand, cursive ;
+  font-size: 16px ;
+  color: #24481a;
+}
+
+.text3 {
+  font-family: bladley hand, cursive ;
+  font-size: 16px ;
+  color: #24481a;
+}
+
+.span1 {
+  font-family: bladley hand, cursive ;
+  color: #24481a;
+}
+
+.span2 {
+  font-family: bladley hand, cursive ;
+  font-size: 20px;
+  color: #24481a;
+}
