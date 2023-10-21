@@ -22,7 +22,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
 }
 
 .menu {
@@ -78,40 +78,60 @@ a {
 
 .grid-container {
   display: grid;
-  grid-gap: 0px;      
-  grid-template-areas: "a pic1 a"
-                       "four  pofile six"
-                       "blank1 video video"
-                       "blank1 vdo1 vdo1";         
+  grid-gap: 0px;
+  column-gap: 10px;      
+  row-gap: 50px;
+  padding: 5px;
+  align-items: center;                           
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(auto,auto);
-  column-gap: 10px;
-  row-gap: 10px;
-  padding: 5px;
-  border: #222 solid;
+  grid-template-areas: "one two two"
+                       "three three four"
+                       "five six seven"
+                       "footer footer footer"
+  
 }
 
 .img1 {
   float: left ;
   border-radius: 50% ;
   margin-right: 35px ;
+  margin-left: 50px;
   position : relative ;
   z-index: 2 ;
 }
 
+.ig {
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  
+}
+
+.text1 {
+  color: #fff;
+  position: relative;
+  margin-left: 1rem;
+}
 .gif {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.pic1 {
-  grid-area: pic1; 
+.one {
+  grid-area: one;
+  align-items: center; 
 }
 
-.profile {
-  grid-area: profile;
+.two {
+  grid-area: two;
+}
 
+.three {
+  grid-area: three;
+  list-style-position: inside;
+  margin-left: 2rem;
 }
 
 .four {
@@ -128,4 +148,39 @@ a {
 
 .seven {
   grid-area: seven;
+}
+
+.footer {
+  grid-area: footer;
+  background: #333;
+  height: 10rem;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.two::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.two:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.two::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #222;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.span1 ::before {
+  color: #fff;
 }
