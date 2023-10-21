@@ -101,22 +101,24 @@ a {
   z-index: 2 ;
 }
 
-.ig {
+.ig1 {
+  display: block;
   position: relative;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text1 {
   color: #fff;
   position: relative;
-  margin-left: 1rem;
-}
-.gif {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 1.8rem;
+  margin-top: 10px;
 }
 
 .one {
@@ -153,34 +155,9 @@ a {
 .footer {
   grid-area: footer;
   background: #333;
-  height: 10rem;
+  height: 6rem;
 }
 
 .nine {
   grid-area: nine;
-}
-
-.two::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-.two:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.two::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background: #222;
-  z-index: -1;
-  transition: transform .3s ease;
-}
-
-.span1 ::before {
-  color: #fff;
 }
