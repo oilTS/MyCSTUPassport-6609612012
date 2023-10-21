@@ -11,7 +11,7 @@ html {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  border: 1px solid;
+  /*border: 1px solid;*/
 }
 
 nav {
@@ -31,7 +31,7 @@ nav {
 
 .menu li {
   list-style: none;
-  margin-left: 1rem;
+  margin-left: 2rem;
   text-align: center;
   transition: 0.5s;
 }
@@ -73,5 +73,59 @@ a {
 }
 
 .span1 {
-  font-family: 'Brush Script MT', cursive;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 0px;      
+  grid-template-areas: "a pic1 a"
+                       "four  pofile six"
+                       "blank1 video video"
+                       "blank1 vdo1 vdo1";         
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(auto,auto);
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 5px;
+  border: #222 solid;
+}
+
+.img1 {
+  float: left ;
+  border-radius: 50% ;
+  margin-right: 35px ;
+  position : relative ;
+  z-index: 2 ;
+}
+
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pic1 {
+  grid-area: pic1; 
+}
+
+.profile {
+  grid-area: profile;
+
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
 }
