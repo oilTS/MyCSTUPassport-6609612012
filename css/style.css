@@ -105,16 +105,22 @@ a {
                          "seven"
                          "footer"
   }
+  .vdo {
+    transition: 1s;
+  }
   .img1 {
     margin: auto;
+    transition: 1s;
   }
   .img3 {
     width: 80%;
     height: 80%;
+    transition: 1s;
   }
   .img9 {
     width: 80%;
     height: 80%;
+    transition: 1s;
   }
   .two {
     margin: auto;
@@ -130,12 +136,22 @@ a {
     list-style-position: inside;
     margin-left: 0rem;
   }
+  .vdo {
+    transition: 2s ease-out;
+  }
   }
 
   @media  screen and (max-width:768px) and (min-width:576px) {
     .img9 {
       width: 80%;
       height: 80%;
+      transition: 1s;
+    }
+    .img3 {
+      transition: 1s;
+    }
+    .img1 {
+      transition: 1s;
     }
     .grid-container {
       grid-template-columns: repeat(2,1fr);
@@ -155,6 +171,9 @@ a {
     list-style-position: inside;
     margin-left: 1rem;
   }
+  .vdo {
+    transition: 2s ease-out;
+  }
   }
 
 .img1 {
@@ -164,6 +183,7 @@ a {
   margin-left: 50px;
   position : relative ;
   z-index: 2 ;
+  transition:1s;
 }
 
 .ig1 {
@@ -234,4 +254,21 @@ a {
 .img9 {
   display: block;
   margin-left: auto;
+  transition: 1s;
+}
+
+.img3 {
+  transition: 1s;
+}
+
+.mark {
+  background-color: #d6d6d6 ;
+}
+
+.text3 {
+  transition: 1s;
+}
+
+.vdo {
+  transition: 2s ease-out;
 }
