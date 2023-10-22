@@ -136,9 +136,7 @@ a {
     list-style-position: inside;
     margin-left: 0rem;
   }
-  .vdo {
-    transition: 2s ease-out;
-  }
+
   }
 
   @media  screen and (max-width:768px) and (min-width:576px) {
@@ -267,8 +265,4 @@ a {
 
 .text3 {
   transition: 1s;
-}
-
-.vdo {
-  transition: 2s ease-out;
 }
