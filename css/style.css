@@ -87,7 +87,7 @@ a {
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(auto,auto);
   grid-template-areas: "one two two"
-                       "three four four"
+                       "three three four"
                        "five six seven"
                        "footer footer footer"
   
@@ -211,6 +211,7 @@ a {
 
 .two {
   grid-area: two;
+  
 }
 
 .three {
@@ -263,6 +264,7 @@ a {
   background-color: #d6d6d6 ;
 }
 
-.text3 {
+.text4 {
+  font-size: 22px;
   transition: 1s;
 }

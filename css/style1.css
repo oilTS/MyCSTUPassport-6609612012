@@ -1,3 +1,76 @@
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container {
+max-width: 1140px;
+margin: 0 auto;
+}
+
+nav {
+background: #333;
+}
+
+.nav-con {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+}
+
+.menu {
+display: flex;
+}
+
+.menu li {
+list-style: none;
+margin-left: 2rem;
+text-align: center;
+transition: 0.5s;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+}
+
+.logo {
+font-size: 1.5rem;
+}
+
+@media screen and (max-width:576px) {
+.logo {
+  margin-bottom: 1.5rem;
+}
+
+.nav-con {
+  padding: 3rem 0;
+  flex-direction: column;
+  height: auto;
+}
+
+.menu {
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu li {
+  padding: 1rem 0;
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.menu li:hover {
+  background: #222;
+}
+}
 
 .grid-container1 {
     display: grid;
