@@ -1,5 +1,6 @@
 html {
   font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
 }
 
 * {
@@ -11,7 +12,6 @@ html {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  /*border: 1px solid;*/
 }
 
 nav {
@@ -45,7 +45,7 @@ a {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:576px) {
   .logo {
     margin-bottom: 1.5rem;
   }
@@ -82,15 +82,80 @@ a {
   column-gap: 10px;      
   row-gap: 50px;
   padding: 5px;
+  justify-content: space-between;
   align-items: center;                           
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(auto,auto);
   grid-template-areas: "one two two"
-                       "three three four"
+                       "three four four"
                        "five six seven"
                        "footer footer footer"
   
 }
+
+@media screen and (max-width:576px) {
+  .grid-container {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "one"
+                         "two"
+                         "four"
+                         "three"
+                         "five"
+                         "six"
+                         "seven"
+                         "footer"
+  }
+  .img1 {
+    margin: auto;
+  }
+  .img3 {
+    width: 80%;
+    height: 80%;
+  }
+  .img9 {
+    width: 80%;
+    height: 80%;
+  }
+  .two {
+    margin: auto;
+  }
+  .six {
+    margin: auto;
+  }
+  .one {
+    margin: auto;
+  }
+  .three {
+    grid-area: three;
+    list-style-position: inside;
+    margin-left: 0rem;
+  }
+  }
+
+  @media  screen and (max-width:768px) and (min-width:576px) {
+    .img9 {
+      width: 80%;
+      height: 80%;
+    }
+    .grid-container {
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: "one two"
+                           "three four"
+                           "five six"
+                           "five seven"
+                           "footer footer"
+  }
+  .six {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .three {
+    grid-area: three;
+    list-style-position: inside;
+    margin-left: 1rem;
+  }
+  }
 
 .img1 {
   float: left ;
@@ -133,11 +198,12 @@ a {
 .three {
   grid-area: three;
   list-style-position: inside;
-  margin-left: 2rem;
+  margin-left: 4rem;
 }
 
 .four {
   grid-area: four;
+  
 }
 
 .five {
@@ -146,6 +212,9 @@ a {
 
 .six {
   grid-area: six;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .seven {
@@ -160,4 +229,9 @@ a {
 
 .nine {
   grid-area: nine;
+}
+
+.img9 {
+  display: block;
+  margin-left: auto;
 }
