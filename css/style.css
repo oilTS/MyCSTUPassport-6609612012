@@ -268,3 +268,13 @@ a {
   font-size: 22px;
   transition: 1s;
 }
+
+.text3::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text3:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
